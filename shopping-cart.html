@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/95_js_RaynaLuch/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/95_js_RaynaLuch/assets/vendor-cb0d5946.js">
+    <link rel="modulepreload" crossorigin href="/95_js_RaynaLuch/assets/modal-22b3c9cb.js">
+    <link rel="stylesheet" href="/95_js_RaynaLuch/assets/vendor-a9424048.css">
+    <link rel="stylesheet" href="/95_js_RaynaLuch/assets/modal-abed4a3d.css">
+  </head>
+  <body>
+    
+<header class="header">
+  <div class="section header-section">
+    <div class="header-container container">
+      <div class="logo-section">
+        <a class="logo-link link" href="./index.html">
+         <svg class="logo-img">
+          <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-white-logo"></use>
+        </svg>
+         <span class="logo-text">Food Boutique</span>
+        </a>
+      </div>
+        <nav class="header-nav">
+        <ul class="header-list list">
+          <li class="header-home">
+            <a class="header-home-link link" href="./index.html">Home</a>
+          </li>
+          <li class="header-cart">
+            <a class="header-cart-link" href="./shopping-cart.html">
+              <svg class="cart-img">
+                <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-white-basket"></use>
+              </svg>
+            <span class="header-cart-text">CART (<span class="itemsCount">0</span>)</span> 
+            </a>
+          </li>
+        </ul>
+        </nav>
+    </div>
+  </div>
+  
+  </header>
+
+    <div class="container shopping-cart-container">
+
+      <!-- main container -->
+      <div class="main-container">
+      <!-- BASKET -->
+        <div class="basket-container">
+          <div class="icon-container">
+            <svg class="" width="18" height="18">
+              <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-white-basket"></use>
+            </svg>
+          </div>
+          <h1 class="basket-container-text">CART (<span class="count">0</span>)</h1>
+        </div>
+        <!-- SUB CONTAINER -->
+        <div class="sub-container">
+          <!-- LIST -->
+          <div class="list-container">
+            <button class="delete-btn" type="button">
+              Delete all
+
+              <svg class="" width="24" height="24">
+                <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-cross"></use>
+              </svg>
+            </button>
+
+            <ul class="product-list"></ul>
+          </div>
+          <!-- ORDER -->
+          <div class="your-order">
+            <h2 class="order-text">YOUR ORDER</h2>
+            <div class="total-price">
+              <p class="total-text">Total</p>
+              <p class="sum-text">Sum:</p>
+              <p class="amount">$<span class="change">0,00</span></p>
+            </div>
+            <form class="order-form">
+              <input
+                type="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"                         
+                id="email"
+                name="e-mail"
+                class="order-input"
+                placeholder="Mail: Enter your email"
+                required
+              />
+              <button type="submit" class="order-btn">Checkout</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <footer>
+  <div class="footer-top-div">
+    <div>
+      <div class="footer-logo-div">
+        <a href="./index.html" class="footer-logo-link">
+          <svg width="32" height="32" class="footer-icon-svg">
+            <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-green-logo"></use>
+          </svg>
+          Food Boutique
+        </a>
+      </div>
+
+      <div class="footer-social-div">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          class="footer-icon-link"
+          target="_blank"
+        >
+          <svg
+            width="40"
+            height="40"
+            class="footer-icon-social footer-facebook"
+          >
+            <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-facebook"></use>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.instagram.com/goitclub/"
+          class="footer-icon-link"
+          target="_blank"
+        >
+          <svg
+            width="40"
+            height="40"
+            class="footer-icon-social footer-instagram"
+          >
+            <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-instagram"></use>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.youtube.com/c/GoIT"
+          class="footer-icon-link"
+          target="_blank"
+        >
+          <svg width="40" height="40" class="footer-icon-social footer-youtube">
+            <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="central-and-form-divs">
+      <div class="footer-central-div">
+        <h2 class="footer-central-h2">
+          Discover the Variety of Flavors and Quality
+        </h2>
+        <p class="footer-central-p">
+          An online store where you will find fresh, natural and delicious
+          products for a healthy life and unforgettable gastronomic adventures.
+        </p>
+      </div>
+
+      <form class="footer-form">
+        <label>Subscribe and learn about new products!</label>
+        <input type="email" placeholder="Email" required />
+        <button type="submit" class="footer-btn-send">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-rights-p">Food Boutique. All rights reserved.</p>
+
+    <div class="footer-privacy">
+      <p>Privacy Policy</p>
+      <p>/</p>
+      <p>Terms of Service</p>
+    </div>
+  </div>
+  <section class="modal-section">
+    <div class="footer-modal-w wrong-email-footer">
+      <button class="footer-modal-w-close footer-close-email-margin">
+        <svg width="28" height="28">
+          <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="footer-modal-w-text-content">
+        <h2 class="footer-modal-w-h2">
+          Your <span class="footer-modal-w-span">email address</span> could not
+          be validated!
+        </h2>
+        <p class="footer-modal-w-p">
+          This email address is not available. Please choose a different
+          address.
+        </p>
+      </div>
+    </div>
+    <div class="footer-modal-w footer-modal-w-failure">
+      <button class="footer-modal-w-close footer-close-failure-margin">
+        <svg width="28" height="28">
+          <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="footer-modal-w-text-content">
+        <h2 class="footer-modal-w-h2">
+          This <span class="footer-modal-w-span">email address</span> has
+          already been entered
+        </h2>
+        <p class="footer-modal-w-p">
+          You have already subscribed to our new products. Watch for offers at
+          the mailing address.
+        </p>
+      </div>
+    </div>
+    <div class="footer-modal-w footer-modal-w-success">
+      <button class="footer-modal-w-close footer-close-success-margin">
+        <svg width="28" height="28">
+          <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="footer-modal-w-text-content">
+        <h2 class="footer-modal-w-h2">
+          Thanks for subscribing for
+          <span class="footer-modal-w-span">new</span> products
+        </h2>
+        <p class="footer-modal-w-p">
+          We promise you organic and high-quality products that will meet
+          yourexpectations. Please stay with us and we promise you many pleasant
+          surprises.
+        </p>
+      </div>
+      <img
+        src="https://github.com/RaynaLuch/project-teamNumber1/blob/main/src/img/rectangle.png?raw=true"
+        alt="A basket of vegetables"
+        class="footer-modal-w-img"
+      />
+    </div>
+  </section>
+</footer>
+
+    <div class="is-hidden modal-window" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal-button" type="button">
+      <svg class="modal-close">
+        <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="modal-flex">
+      <div class="modal-img-desk">
+        <div class="modal-img-div">
+          <img class="modal-img" id="modal-img" src="#" alt="#" />
+        </div>
+        <div>
+          <p class="modal-title" id="modal-name">Name</p>
+          <span class="modal-label">Category:</span>
+          <span class="modal-value" id="modal-category">Fresh Produce</span>
+          <span class="modal-label">Size:</span
+          ><span class="modal-value" id="modal-size">1 medium-sized</span>
+          <span class="modal-label">Popularity:</span>
+          <span class="modal-value" id="modal-popularity">0</span>
+          <p class="modal-description" id="modal-desc">
+            A round, orange vegetable with a thick shell and seeds inside. It is
+            often used in cooking and baking for its sweet and earthy flavor.
+          </p>
+        </div>
+      </div>
+      <div class="modal-price-button">
+        <p class="modal-price" id="modal-price">$0.00</p>
+        <button class="modal-cart-button" type="button">
+          Add to
+          <svg width="18" height="18" class="modal-button-img">
+            <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-white-basket"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="is-hidden modal-window" data-modal-shopping-cart>
+  <div class="modal-shopping-cart">
+    <button data-modal-close-shopping-cart class="modal-button" type="button">
+      <svg class="modal-close">
+        <use href="/95_js_RaynaLuch/assets/sprite-851c6254.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div>
+      <picture>
+        <source
+          srcset="/95_js_RaynaLuch/assets/tomato-2e7c8a14.png 1x, /95_js_RaynaLuch/assets/tomato@2x-e50564d7.png 2x"
+          type="image/jpeg"
+        />
+        <img
+          class="modal-img-shopping-cart"
+          src="/95_js_RaynaLuch/assets/tomato-2e7c8a14.png"
+          alt="tomato"
+          width="145"
+          height="140"
+        />
+      </picture>
+      <p class="modal-shopping-cart-title">Order success</p>
+      <p class="modal-shopping-cart-text">
+        Thank you for shopping at Food Boutique. Your order has been received
+        and is now being freshly prepared just for you! Get ready to indulge in
+        nourishing goodness, delivered right to your doorstep. We're thrilled to
+        be part of your journey to better health and happiness.
+      </p>
+    </div>
+  </div>
+</div>
+
+    
+  </body>
+</html>
